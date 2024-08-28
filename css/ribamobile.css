@@ -64,3 +64,9 @@
     color: #fff;
     width: 100%;
 }
+
+a {
+    background: gray;
+    background-color: gray;
+    color: white;
+}
