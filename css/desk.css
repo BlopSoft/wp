@@ -1,0 +1,146 @@
+* {
+    color: white;
+    font-family: 'Segoe UI';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+.block {
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+}
+
+.footer {
+    display: block;
+    font-size: 24px;
+    position: fixed;
+    left: 0;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
+
+.bar {
+    background: black;
+    height: calc(100vh - 16px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: nowrap;     
+}
+
+.footer2 {
+    display: block;
+    font-size: 24px;
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #000000;
+        background-size: 100%;
+        margin: 0px;
+    }
+
+    .block {
+        display: block;
+        padding: 8px;
+        background-color: #000000;
+    }
+
+    .footer {
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        left: 0;
+        padding: 10px;
+        background: #000000;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer2 {
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        left: 0; bottom: 0;
+        padding: 10px;
+        background: #ffffff;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        background-size: 100%;
+        margin: 0px;
+    }
+
+    .block {
+        display: block;
+        padding: 8px;
+        background-color: #000000;
+    }
+
+    .footer {
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        left: 0;
+        padding: 10px;
+        background: #000000;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer2 {
+        display: block;
+        font-size: 24px;
+        position: fixed;
+        left: 0; bottom: 0;
+        padding: 10px;
+        background: #000000;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+p, a {
+    text-shadow: 1px 1px 4px black;
+}
+
+.button {
+    display: block;
+    border: none;
+    padding: 16px;
+    color: #ffffff;
+	font-size: 24px;
+    background-color: #000000;
+	text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+hr {
+    background-color: black;
+    color: black;
+}

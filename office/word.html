@@ -1,0 +1,69 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <title>Word</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="saveBtn">Сохранить</button>
+        <input type="file" id="loadFile" style="display: none;">
+        <button id="loadBtn">Загрузить</button>
+        <button id="cutBtn">Вырезать</button>
+        <button id="copyBtn">Копировать</button>
+        <button id="boldBtn"><b>B</b></button>
+        <button id="italicBtn"><i>I</i></button>
+    </div>
+    <div id="editor" contenteditable="true">
+    </div>
+    <script>
+	document.getElementById('boldBtn').addEventListener('click', function() {
+    document.execCommand('bold');
+});
+
+document.getElementById('italicBtn').addEventListener('click', function() {
+    document.execCommand('italic');
+});
+
+document.getElementById('copyBtn').addEventListener('click', function() {
+    document.execCommand('copy');
+});
+
+document.getElementById('cutBtn').addEventListener('click', function() {
+    document.execCommand('cut');
+});
+
+document.getElementById('saveBtn').addEventListener('click', () => {
+    const textToSave = document.getElementById('editor').innerHTML;
+    const blob = new Blob([textToSave], { type: 'text/html' });
+    const fileUrl = URL.createObjectURL(blob);
+
+    // Создаем blob ссылку для скачивания
+    const downloadLink = document.createElement('a');
+    downloadLink.href = fileUrl;
+    downloadLink.download = 'document.html'; // Устанавливаем имя докумэнта
+    document.body.appendChild(downloadLink);
+    downloadLink.click(); // Симулируем нажыьите для скачивания
+    document.body.removeChild(downloadLink); // После скачивания удаляем ссылку
+});
+
+document.getElementById('loadBtn').addEventListener('click', () => {
+    const fileInput = document.getElementById('loadFile');
+    fileInput.click(); // Симулируем нажатые для загрузки докумэнта
+});
+
+document.getElementById('loadFile').addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const content = e.target.result;
+            document.getElementById('editor').innerHTML = content;
+        };
+        reader.readAsText(file);
+    }
+});
+
+// by Rem Zloev
+</script>
+</body></html>

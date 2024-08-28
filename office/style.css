@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+}
+
+.toolbar {
+    background-color: #E3EEF9;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #CCC;
+}
+
+.toolbar button {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.toolbar button:hover {
+    padding: 5px;
+    margin-right: 5px;
+    background-color: yellow;
+}
+
+#editor {
+    height: calc(100% - 40px); /* Adjusted for toolbar height */
+    padding: 20px;
+    overflow-y: auto;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+}

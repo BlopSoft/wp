@@ -1,0 +1,45 @@
+﻿* {
+    color: #fff; 
+    background: rgb(0, 0, 0);
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+    text-decoration: none;
+}
+
+.body {
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.header {
+    font-size: 13px;
+    background: rgb(0, 0, 0);
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+}
+
+.header2 {
+    font-size: 40px;
+}
+
+.text {
+    font-family: 'Segoe UI';
+    font: 'Segoe UI';
+    src: url(ui.ttf);
+    font-size: 20px;
+}
+
+.punkt {
+    margin-left: 24px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.punkt a {
+    margin: 24px;
+    font-size: 30px;
+}

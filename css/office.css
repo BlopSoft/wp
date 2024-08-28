@@ -1,0 +1,8 @@
+﻿* {
+    color: black; 
+    background: white;
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+    text-decoration: none;
+}
