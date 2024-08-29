@@ -1,0 +1,57 @@
+﻿* {
+    color: #fff;
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+    text-decoration: none;
+}
+
+html {
+   background-repeat: no-repeat; 
+   background-size: 100%;
+   background-image: url('../imgs/walls.jpg');
+}
+
+.body {
+    color: white;
+}
+
+.header {
+    font-size: 13px;
+    font-family: 'Segoe UI Light';
+    font: 'Segoe UI Light';
+    src: url(ui_light.ttf);
+}
+
+.header2 {
+    font-size: 40px;
+}
+
+.text {
+    font-family: 'Segoe UI';
+    font: 'Segoe UI';
+    src: url(ui.ttf);
+    font-size: 20px;
+}
+
+.punkt {
+    margin-left: 24px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.punkt a {
+    margin: 24px;
+    font-size: 30px;
+}
+
+.buttons {
+    font-size: 24px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+}

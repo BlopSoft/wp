@@ -6,3 +6,7 @@
     src: url(ui_light.ttf);
     text-decoration: none;
 }
+
+.header2 {
+    font-size: 40px;
+}
